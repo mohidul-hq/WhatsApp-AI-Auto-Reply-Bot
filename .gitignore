@@ -1,0 +1,27 @@
+# Dependencies
+node_modules/
+
+# WhatsApp Web auth/session cache
+.wwebjs_auth/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+private/
+
+# Logs and temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+tmp/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Build/coverage (if ever added)
+dist/
+coverage/
