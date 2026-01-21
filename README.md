@@ -53,8 +53,8 @@ Choose one of the two methods:
 
 - Clone (recommended)
   ```bash
-  git clone https://github.com/<your-org-or-user>/<your-repo>.git
-  cd <your-repo>
+  git clone https://github.com/mohidul-hq/WhatsApp-AI-Auto-Reply-Bot.git
+  cd WhatsApp-AI-Auto-Reply-Bot
   ```
 - Download ZIP
   1) Go to your repository page on GitHub
@@ -63,14 +63,14 @@ Choose one of the two methods:
 
 If this folder is already your working copy, you can skip this section.
 
-## Install and configure
+## Quick Start — step by step
 
-1) Install dependencies
+1) Install Node dependencies
 ```bash
 npm install
 ```
 
-2) Create a `.env` file (you can start from `.env.example`)
+2) Create a `.env` file (start from the example)
 ```bash
 cp .env.example .env
 ```
@@ -97,7 +97,7 @@ PERF_LOG_INTERVAL_MS=60000
 MAX_QUEUE=100
 ```
 
-## Run the bot
+3) Run the bot
 
 ```bash
 npm start
@@ -105,6 +105,23 @@ npm start
 On first run, you’ll see a QR code in the terminal. Open WhatsApp on your phone → Linked devices → Link a device → scan the QR.
 
 The bot will log events such as “Authenticated”, “ready”, and then it will start processing incoming messages.
+
+4) (Optional) Run tests
+
+```bash
+npm test
+```
+
+5) (Optional) Update to the latest code later
+
+```bash
+git pull --rebase
+npm install
+```
+
+### Windows notes
+- This project uses Puppeteer. If Chrome/Chromium fails to launch, set `PUPPETEER_HEADLESS=true` in `.env` or specify `PUPPETEER_EXECUTABLE_PATH` to your Chrome path (e.g., `C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe`).
+- If `cp` doesn’t work in your shell, you can copy the file manually in Explorer or use PowerShell: `Copy-Item .env.example .env`.
 
 ## Admin commands
 
