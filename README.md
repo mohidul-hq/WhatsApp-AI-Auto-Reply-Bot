@@ -106,17 +106,17 @@ On first run, you’ll see a QR code in the terminal. Open WhatsApp on your phon
 
 The bot will log events such as “Authenticated”, “ready”, and then it will start processing incoming messages.
 
-4) (Optional) Run tests
 
-```bash
-npm test
-```
 
 5) (Optional) Update to the latest code later
 
 ```bash
 git pull --rebase
 npm install
+```
+6) Connect with your whatsapp 
+```bash
+ 
 ```
 
 ### Windows notes
