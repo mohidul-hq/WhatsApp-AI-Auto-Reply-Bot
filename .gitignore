@@ -5,8 +5,7 @@ node_modules/
 .wwebjs_auth/
 
 # Local secrets
-.env
-.env.*
+
 !.env.example
 private/
 
